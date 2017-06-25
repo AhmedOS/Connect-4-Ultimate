@@ -29,14 +29,19 @@ namespace connect4
             pfc.AddMemoryFont(dataPtr, fontLength);
         }
 
-        public static Icon GetIcon()
-        {
-            return Properties.Resources.chip;
-        }
-
         public static FontFamily GetFontFamily(MyFont myFont)
         {
             return pfc.Families[(int)myFont];
+        }
+
+        public static Icon GetIcon()
+        {
+            return Properties.Resources.icon;
+        }
+
+        public static string GetProductVersion()
+        {
+            return "v1.0.0";
         }
     }
 }

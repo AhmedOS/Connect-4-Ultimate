@@ -30,7 +30,6 @@
         {
             this.btnOptions = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnLan = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.tbxP1Name = new System.Windows.Forms.TextBox();
@@ -43,18 +42,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.picBoxP2 = new System.Windows.Forms.PictureBox();
             this.picBoxP1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bgw = new System.ComponentModel.BackgroundWorker();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxP2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxP1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOptions
             // 
             this.btnOptions.Font = new System.Drawing.Font("Electro Shackle", 21.75F);
-            this.btnOptions.Location = new System.Drawing.Point(12, 561);
+            this.btnOptions.Location = new System.Drawing.Point(12, 571);
             this.btnOptions.Name = "btnOptions";
             this.btnOptions.Size = new System.Drawing.Size(155, 36);
             this.btnOptions.TabIndex = 5;
@@ -65,7 +64,7 @@
             // btnAbout
             // 
             this.btnAbout.Font = new System.Drawing.Font("Electro Shackle", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbout.Location = new System.Drawing.Point(12, 603);
+            this.btnAbout.Location = new System.Drawing.Point(12, 613);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(155, 36);
             this.btnAbout.TabIndex = 6;
@@ -73,22 +72,11 @@
             this.btnAbout.UseVisualStyleBackColor = true;
             this.btnAbout.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Electro Shackle", 54.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Crimson;
-            this.label1.Location = new System.Drawing.Point(105, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(575, 76);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "   Connect 4    ";
-            // 
             // btnLan
             // 
             this.btnLan.Font = new System.Drawing.Font("Electro Shackle", 21.75F);
             this.btnLan.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnLan.Location = new System.Drawing.Point(12, 519);
+            this.btnLan.Location = new System.Drawing.Point(12, 529);
             this.btnLan.Name = "btnLan";
             this.btnLan.Size = new System.Drawing.Size(155, 36);
             this.btnLan.TabIndex = 4;
@@ -99,7 +87,7 @@
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Electro Shackle", 21.75F);
-            this.btnStart.Location = new System.Drawing.Point(12, 477);
+            this.btnStart.Location = new System.Drawing.Point(12, 487);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(155, 36);
             this.btnStart.TabIndex = 3;
@@ -112,7 +100,7 @@
             this.tbxP1Name.BackColor = System.Drawing.Color.Black;
             this.tbxP1Name.Font = new System.Drawing.Font("Electro Shackle", 36F);
             this.tbxP1Name.ForeColor = System.Drawing.Color.White;
-            this.tbxP1Name.Location = new System.Drawing.Point(86, 318);
+            this.tbxP1Name.Location = new System.Drawing.Point(86, 350);
             this.tbxP1Name.Name = "tbxP1Name";
             this.tbxP1Name.Size = new System.Drawing.Size(240, 63);
             this.tbxP1Name.TabIndex = 1;
@@ -123,7 +111,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Electro Shackle", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(332, 314);
+            this.label2.Location = new System.Drawing.Point(332, 346);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(117, 67);
             this.label2.TabIndex = 8;
@@ -134,7 +122,7 @@
             this.tbxP2Name.BackColor = System.Drawing.Color.Black;
             this.tbxP2Name.Font = new System.Drawing.Font("Electro Shackle", 36F);
             this.tbxP2Name.ForeColor = System.Drawing.Color.White;
-            this.tbxP2Name.Location = new System.Drawing.Point(455, 318);
+            this.tbxP2Name.Location = new System.Drawing.Point(455, 350);
             this.tbxP2Name.Name = "tbxP2Name";
             this.tbxP2Name.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbxP2Name.Size = new System.Drawing.Size(240, 63);
@@ -148,7 +136,7 @@
             this.lblP1Color.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblP1Color.Font = new System.Drawing.Font("Electro Shackle", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblP1Color.ForeColor = System.Drawing.Color.Lime;
-            this.lblP1Color.Location = new System.Drawing.Point(12, 314);
+            this.lblP1Color.Location = new System.Drawing.Point(12, 346);
             this.lblP1Color.Name = "lblP1Color";
             this.lblP1Color.Size = new System.Drawing.Size(71, 67);
             this.lblP1Color.TabIndex = 11;
@@ -161,7 +149,7 @@
             this.lblP2Color.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblP2Color.Font = new System.Drawing.Font("Electro Shackle", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblP2Color.ForeColor = System.Drawing.Color.Lime;
-            this.lblP2Color.Location = new System.Drawing.Point(701, 314);
+            this.lblP2Color.Location = new System.Drawing.Point(701, 346);
             this.lblP2Color.Name = "lblP2Color";
             this.lblP2Color.Size = new System.Drawing.Size(71, 67);
             this.lblP2Color.TabIndex = 12;
@@ -200,7 +188,7 @@
             // 
             this.panel1.Controls.Add(this.lblP2Type);
             this.panel1.Controls.Add(this.lblP1Type);
-            this.panel1.Location = new System.Drawing.Point(86, 387);
+            this.panel1.Location = new System.Drawing.Point(86, 419);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(609, 31);
             this.panel1.TabIndex = 22;
@@ -209,7 +197,7 @@
             // 
             this.picBoxP2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBoxP2.Image = global::connect4.Properties.Resources.electronic_ai;
-            this.picBoxP2.Location = new System.Drawing.Point(475, 112);
+            this.picBoxP2.Location = new System.Drawing.Point(475, 144);
             this.picBoxP2.Name = "picBoxP2";
             this.picBoxP2.Size = new System.Drawing.Size(200, 200);
             this.picBoxP2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -221,7 +209,7 @@
             // 
             this.picBoxP1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picBoxP1.Image = global::connect4.Properties.Resources.electronic_ai;
-            this.picBoxP1.Location = new System.Drawing.Point(107, 112);
+            this.picBoxP1.Location = new System.Drawing.Point(107, 144);
             this.picBoxP1.Name = "picBoxP1";
             this.picBoxP1.Size = new System.Drawing.Size(200, 200);
             this.picBoxP1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -229,27 +217,27 @@
             this.picBoxP1.TabStop = false;
             this.picBoxP1.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::connect4.Properties.Resources.electronic_ai;
-            this.pictureBox1.Location = new System.Drawing.Point(668, 519);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(104, 127);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // bgw
             // 
             this.bgw.WorkerSupportsCancellation = true;
             this.bgw.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgw_DoWork);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::connect4.Properties.Resources.logo;
+            this.pictureBox2.Location = new System.Drawing.Point(151, -35);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(479, 201);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 23;
+            this.pictureBox2.TabStop = false;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(784, 651);
+            this.ClientSize = new System.Drawing.Size(784, 661);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.picBoxP2);
             this.Controls.Add(this.picBoxP1);
@@ -260,10 +248,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tbxP1Name);
             this.Controls.Add(this.btnLan);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.btnOptions);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "MainForm";
@@ -274,7 +261,7 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxP2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxP1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,8 +270,6 @@
         #endregion
         private System.Windows.Forms.Button btnOptions;
         private System.Windows.Forms.Button btnAbout;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLan;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.TextBox tbxP1Name;
@@ -298,6 +283,7 @@
         private System.Windows.Forms.PictureBox picBoxP2;
         private System.Windows.Forms.Panel panel1;
         private System.ComponentModel.BackgroundWorker bgw;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

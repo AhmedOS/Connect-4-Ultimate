@@ -20,6 +20,7 @@ namespace connect4
         {
             InitializeComponent();
             LoadFonts();
+            Icon = CommonProperties.GetIcon();
             this.message = message;
             this.seconds = seconds;
         }
@@ -43,7 +44,6 @@ namespace connect4
         private void ProgressForm_Load(object sender, EventArgs e)
         {
             label1.Text = message;
-            Icon = Properties.Resources.chip;
         }
 
         private void ProgressForm_FormClosing(object sender, FormClosingEventArgs e)

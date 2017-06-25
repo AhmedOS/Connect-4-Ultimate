@@ -129,7 +129,8 @@ namespace connect4
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(this, "By: Ahmed Osama\n2017", "About",
+            MessageBox.Show(this, "By: Ahmed Osama\nahmedosama.me\n" +
+                            CommonProperties.GetProductVersion(), "About",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -418,7 +419,6 @@ namespace connect4
         {
             this.btnOptions.Font = new System.Drawing.Font(CommonProperties.GetFontFamily(CommonProperties.MyFont.ElectroShackle), 21.75F);
             this.btnAbout.Font = new System.Drawing.Font(CommonProperties.GetFontFamily(CommonProperties.MyFont.ElectroShackle), 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Font = new System.Drawing.Font(CommonProperties.GetFontFamily(CommonProperties.MyFont.ElectroShackle), 54.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLan.Font = new System.Drawing.Font(CommonProperties.GetFontFamily(CommonProperties.MyFont.ElectroShackle), 21.75F);
             this.btnStart.Font = new System.Drawing.Font(CommonProperties.GetFontFamily(CommonProperties.MyFont.ElectroShackle), 21.75F);
             this.tbxP1Name.Font = new System.Drawing.Font(CommonProperties.GetFontFamily(CommonProperties.MyFont.ElectroShackle), 36F);
