@@ -22,3 +22,5 @@ Let's take the classical game to the next level.
 ![](http://i.imgur.com/Th0Jg2j.png)
 
 * And more...
+
+## Download [Latest Release.](https://github.com/AhmedOS/Connect-4-Ultimate/releases/latest)
