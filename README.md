@@ -23,4 +23,4 @@ Let's take the classical game to the next level.
 
 * And more...
 
-## Download [Latest Release.](https://github.com/AhmedOS/Connect-4-Ultimate/releases/latest)
+## Download [Latest Release](https://github.com/AhmedOS/Connect-4-Ultimate/releases/latest).
