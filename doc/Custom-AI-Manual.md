@@ -32,6 +32,7 @@ And the whole input argument as one line would be like this:
 ```
 1 0 2 2 2 2 2 2 2 2 2 2 2 2 2 0 2 2 2 2 2 2 0 2 2 2 1 2 2 1 1 2 2 0 2 1 1 0 0 2 0 1 0 1 0
 ```
+First 3 numbers describes ```YOUR_ID```, ```OPPONENT_ID``` and ```EMPTY_SPACE_ID```. Next 7 numbers describes first row of the board (the top row), next 7 numbers describes second row, and so on.
 
 - This is [**code example**](https://github.com/AhmedOS/Connect-4-Ultimate/blob/master/doc/ai_agent_example.cpp#L223) for an agent written in C++.
 - Take a look at [ExternalAI.cs](https://github.com/AhmedOS/Connect-4-Ultimate/blob/master/src/connect4/ExternalAI.cs) class for more information.
