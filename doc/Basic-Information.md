@@ -10,5 +10,7 @@
   - The player on the left.
 - Who plays first in an online game?
   - The player who hosts the game.
+- What happens if my Custom-AI crashes in the middle of the game?
+  - Your opponent wins and gets a point.
 - Is it possible to play with other player that isn't on the same network?
   - Yes it is possible via VLAN service, like Hamachi.
