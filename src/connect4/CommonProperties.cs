@@ -13,10 +13,11 @@ namespace connect4
     {
         public enum MyFont { AgencyFB, ElectroShackle }
 
-        static PrivateFontCollection pfc = new PrivateFontCollection();
+        static PrivateFontCollection pfc;
 
-        public static void Init()
+        public static void Init() //call to initialize
         {
+            pfc = new PrivateFontCollection();
             SetupFont(Properties.Resources.Agency_FB);
             SetupFont(Properties.Resources.Electro_Shackle);
         }
@@ -28,7 +29,8 @@ namespace connect4
             Marshal.Copy(fontData, 0, dataPtr, fontLength);
             pfc.AddMemoryFont(dataPtr, fontLength);
         }
-
+        
+        //Usage example: https://github.com/AhmedOS/Connect-4-Ultimate/blob/master/src/connect4/MainForm.cs#L420
         public static FontFamily GetFontFamily(MyFont myFont)
         {
             return pfc.Families[(int)myFont];
